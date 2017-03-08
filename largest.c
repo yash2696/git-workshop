@@ -23,7 +23,7 @@ int main()
        printf("Enter Number %d: ", i+1);
 	   
 	   // HERE IS THE BUG, PUT '&' IN FRONT OF arr[i]
-       scanf("%f", arr[i]);
+       scanf("%f", &arr[i]);
     }
 
     // Loop to store largest number to arr[0]

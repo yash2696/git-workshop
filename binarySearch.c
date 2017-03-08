@@ -25,7 +25,7 @@ int main(){
     l=0,u=n-1;
 	
 	// HERE IS THE BUG, THE CONDITION SHOULD BE (l<=u).
-    while(l<u){
+    while(l<=u){
          mid=(l+u)/2;
          if(m==a[mid]){
              c=1;
