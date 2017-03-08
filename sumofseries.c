@@ -1,6 +1,6 @@
 /*********
 
-Author1 Name:
+Author1 Name: Mohammed Fayaz
 Author2 Name:
 
 FIXED THE BUGS FOR GIT-WORKSHOP
@@ -20,7 +20,7 @@ int main(){
     printf("Sum of the series: ");
 
 	// HERE IS THE BUG, LOOP SHOULD GO UPTO AND INCLUDING n, change < to <=
-    for(i =1;i <n n;i++){
+    for(i =1;i <= n n;i++){
          if (i!=n)
              printf("%d + ",i);
          else

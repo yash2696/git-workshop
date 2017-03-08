@@ -1,6 +1,7 @@
 /*********
+God: Mohammed Fayaz Salim
 
-Author1 Name:
+Author1 Name: Mohammed Fayaz Salim
 Author2 Name:
 
 FIXED THE BUGS FOR GIT-WORKSHOP
