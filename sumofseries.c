@@ -20,7 +20,7 @@ int main(){
     printf("Sum of the series: ");
 
 	// HERE IS THE BUG, LOOP SHOULD GO UPTO AND INCLUDING n, change < to <=
-    for(i =1;i <n n;i++){
+    for(i =1;i <=n n;i++){
          if (i!=n)
              printf("%d + ",i);
          else

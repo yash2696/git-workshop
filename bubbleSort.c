@@ -29,7 +29,7 @@ void main() {
 void bubble_sort(int iarr[], int num) {
    int i, j, k, temp;
    for (i = 1; i < num; i++) {
-      for (j = 0; j < num; j++) {
+      for (j = 0; j < num-1; j++) {
          if (iarr[j] > iarr[j + 1]) {
             temp = iarr[j];
             iarr[j] = iarr[j + 1];

@@ -20,7 +20,7 @@ int main()
         reversedNumber = reversedNumber*10 + remainder;
 		
 		// HERE IS THE BUG, n SHOULD BE DIVIDED BY 10 ON EACH ITERATION, NOT BY 100
-        n /= 100;
+        n /= 10;
     }
 
     printf("Reversed Number = %d", reversedNumber);
