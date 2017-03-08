@@ -21,7 +21,7 @@ void main()
         sum  = sum + digit;
 		
 		// HERE IS THE BUG, n SHOULD BE DIVIDED BY 10 ON EACH ITERATION, NOT BY 100
-        num /= 100;
+        num /= 10;
     }
     printf("Given number = %ld\n", temp);
     printf("Sum of the digits %ld = %ld\n", temp, sum);
