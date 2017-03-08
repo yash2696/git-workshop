@@ -25,7 +25,7 @@ int main() {
  
    
    // HERE IS THE BUG, WE MISSED THE FIRST ELEMENT OF THE ARRAY. CHANGE i=1 to i=0
-   i = 1;
+   i = 0;
    while (i < num && ele != a[i]) {
       i++;
    }

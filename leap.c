@@ -20,7 +20,7 @@ int main()
         if( year%100 == 0)
         {
 			// HERE IS THE BUG, WHEN YEAR%400 == 0, THEN IT IS LEAP YEAR!!
-            if ( year%400 != 0)
+            if ( year%400 == 0)
                 printf("%d is a leap year.", year);
             else
                 printf("%d is not a leap year.", year);
