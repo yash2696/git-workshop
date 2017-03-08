@@ -15,7 +15,7 @@ int main()
     printf("Enter a three digit integer: ");
 	
 	// HERE IS THE BUG, PUT A '&' IN FRONT OF number.
-    scanf("%d", number);
+    scanf("%d",&number);
 
     originalNumber = number;
 
