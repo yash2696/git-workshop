@@ -1,3 +1,11 @@
+/*********
+
+Author1 Name:
+Author2 Name:
+
+FIXED THE BUGS FOR GIT-WORKSHOP
+
+**********/
 #include <stdio.h>
 
 int main()
@@ -13,7 +21,9 @@ int main()
     for(i = 0; i < n; ++i)
     {
        printf("Enter Number %d: ", i+1);
-       scanf("%f", &arr[i]);
+	   
+	   // HERE IS THE BUG, PUT '&' IN FRONT OF arr[i]
+       scanf("%f", arr[i]);
     }
 
     // Loop to store largest number to arr[0]

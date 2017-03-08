@@ -1,3 +1,11 @@
+/*********
+
+Author1 Name:
+Author2 Name:
+
+FIXED THE BUGS FOR GIT-WORKSHOP
+
+**********/
 #include<stdio.h>
  
 int main() {
@@ -15,8 +23,9 @@ int main() {
    printf("\nEnter the elements to be searched :");
    scanf("%d", &ele);
  
-   //Search starts from the zeroth location
-   i = 0;
+   
+   // HERE IS THE BUG, WE MISSED THE FIRST ELEMENT OF THE ARRAY. CHANGE i=1 to i=0
+   i = 1;
    while (i < num && ele != a[i]) {
       i++;
    }

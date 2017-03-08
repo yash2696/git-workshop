@@ -1,42 +1,44 @@
+/*********
+
+Author1 Name:
+Author2 Name:
+
+FIXED THE BUGS FOR GIT-WORKSHOP
+
+**********/
 #include<stdio.h>
-#include<conio.h>
  
 void bubble_sort(int[], int);
  
 void main() {
    int arr[30], num, i;
  
-   printf("\nEnter no of elements :");
+   printf("Enter no of elements :");
    scanf("%d", &num);
  
-   printf("\nEnter array elements :");
+   printf("Enter array elements :");
    for (i = 0; i < num; i++)
       scanf("%d", &arr[i]);
  
    bubble_sort(arr, num);
-   getch();
+   printf("\n");
 }
  
+
+// HERE IS THE BUG, IN THE INNER LOOP, CHANGE j < num to j < num-1
 void bubble_sort(int iarr[], int num) {
    int i, j, k, temp;
- 
-   printf("\nUnsorted Data:");
-   for (k = 0; k < num; k++) {
-      printf("%5d", iarr[k]);
-   }
- 
    for (i = 1; i < num; i++) {
-      for (j = 0; j < num - 1; j++) {
+      for (j = 0; j < num; j++) {
          if (iarr[j] > iarr[j + 1]) {
             temp = iarr[j];
             iarr[j] = iarr[j + 1];
             iarr[j + 1] = temp;
          }
       }
- 
-      printf("\nAfter pass %d : ", i);
-      for (k = 0; k < num; k++) {
-         printf("%5d", iarr[k]);
-      }
    }
+   
+	for (k = 0; k < num; k++) {
+         printf("%5d", iarr[k]);
+	}
 }

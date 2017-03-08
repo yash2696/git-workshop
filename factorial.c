@@ -1,3 +1,11 @@
+/*********
+
+Author1 Name:
+Author2 Name:
+
+FIXED THE BUGS FOR GIT-WORKSHOP
+
+**********/
 #include <stdio.h>
 int main()
 {
@@ -7,15 +15,15 @@ int main()
     printf("Enter an integer: ");
     scanf("%d",&n);
 
-    // show error if the user enters a negative integer
     if (n < 0)
         printf("Error! Factorial of a negative number doesn't exist.");
 
     else
     {
-        for(i=1; i<=n; ++i)
+		// HERE IS THE BUG, CHANGE i<n to i<=n
+        for(i=1; i<n; ++i)
         {
-            factorial *= i;              // factorial = factorial*i;
+            factorial *= i;
         }
         printf("Factorial of %d = %llu", n, factorial);
     }

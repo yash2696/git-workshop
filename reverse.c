@@ -1,3 +1,11 @@
+/*********
+
+Author1 Name:
+Author2 Name:
+
+FIXED THE BUGS FOR GIT-WORKSHOP
+
+**********/
 #include <stdio.h>
 int main()
 {
@@ -10,7 +18,9 @@ int main()
     {
         remainder = n%10;
         reversedNumber = reversedNumber*10 + remainder;
-        n /= 10;
+		
+		// HERE IS THE BUG, n SHOULD BE DIVIDED BY 10 ON EACH ITERATION, NOT BY 100
+        n /= 100;
     }
 
     printf("Reversed Number = %d", reversedNumber);

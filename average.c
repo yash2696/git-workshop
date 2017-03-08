@@ -1,19 +1,20 @@
+/*********
+
+Author1 Name:
+Author2 Name:
+
+FIXED THE BUGS FOR GIT-WORKSHOP
+
+**********/
 #include <stdio.h>
 
 int main()
 {
     int n, i;
-    float num[100], sum = 0.0, average;
+    float num[100], sum = 0.0;
 
     printf("Enter the numbers of elements: ");
     scanf("%d", &n);
-
-    while (n > 100 || n <= 0)
-    {
-        printf("Error! number should in range of (1 to 100).\n");
-        printf("Enter the number again: ");
-        scanf("%d", &n);
-    }
 
     for(i = 0; i < n; ++i)
     {
@@ -22,6 +23,8 @@ int main()
         sum += num[i];
     }
 
+	// HERE IS THE BUG, average is declared as int, that will give wrong output. CHANGE int average TO float average.
+	int average;
     average = sum / n;
     printf("Average = %.2f", average);
 

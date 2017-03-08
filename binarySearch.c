@@ -1,3 +1,11 @@
+/*********
+
+Author1 Name:
+Author2 Name:
+
+FIXED THE BUGS FOR GIT-WORKSHOP
+
+**********/
 #include<stdio.h>
 int main(){
 
@@ -15,7 +23,9 @@ int main(){
     scanf("%d",&m);
 
     l=0,u=n-1;
-    while(l<=u){
+	
+	// HERE IS THE BUG, THE CONDITION SHOULD BE (l<=u).
+    while(l<u){
          mid=(l+u)/2;
          if(m==a[mid]){
              c=1;

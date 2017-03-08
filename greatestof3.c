@@ -1,3 +1,13 @@
+/*********
+
+Author1 Name:
+Author2 Name:
+
+FIXED THE BUGS FOR GIT-WORKSHOP
+
+**********/
+
+// NO BUGS IN THIS PROGRAM
 #include<stdio.h>
  
 int main() {
@@ -7,13 +17,13 @@ int main() {
    scanf("%d %d %d", &a, &b, &c);
  
    if ((a > b) && (a > c))
-      printf("\na is greatest");
+      printf("\a is greatest");
  
    if ((b > c) && (b > a))
-      printf("\nb is greatest");
+      printf("\b is greatest");
  
    if ((c > a) && (c > b))
-      printf("\nc is greatest");
+      printf("\c is greatest");
  
    return(0);
 }

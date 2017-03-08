@@ -1,10 +1,21 @@
+/*********
+
+Author1 Name:
+Author2 Name:
+
+FIXED THE BUGS FOR GIT-WORKSHOP
+
+**********/
+
 #include <stdio.h>
 int main()
 {
     int number, originalNumber, remainder, result = 0;
 
     printf("Enter a three digit integer: ");
-    scanf("%d", &number);
+	
+	// HERE IS THE BUG, PUT A '&' IN FRONT OF number.
+    scanf("%d", number);
 
     originalNumber = number;
 

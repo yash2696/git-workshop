@@ -1,3 +1,11 @@
+/*********
+
+Author1 Name:
+Author2 Name:
+
+FIXED THE BUGS FOR GIT-WORKSHOP
+
+**********/
 #include<stdio.h>
 int main(){
 
@@ -11,7 +19,8 @@ int main(){
 
     printf("Sum of the series: ");
 
-    for(i =1;i <= n;i++){
+	// HERE IS THE BUG, LOOP SHOULD GO UPTO AND INCLUDING n, change < to <=
+    for(i =1;i <n n;i++){
          if (i!=n)
              printf("%d + ",i);
          else

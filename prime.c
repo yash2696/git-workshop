@@ -1,3 +1,11 @@
+/*********
+
+Author1 Name:
+Author2 Name:
+
+FIXED THE BUGS FOR GIT-WORKSHOP
+
+**********/
 #include <stdio.h>
 int main()
 {
@@ -15,7 +23,8 @@ int main()
         }
     }
 
-    if (flag==0)
+	// HERE IS THE BUG, NUMBER WILL BE PRIME WHEN THE VALUE OF FLAG IS EQUAL TO 0. CHANGE != to ==
+    if (flag!=0)
         printf("%d is a prime number.",n);
     else
         printf("%d is not a prime number.",n);
