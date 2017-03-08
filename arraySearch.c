@@ -20,7 +20,7 @@ int main() {
    }
  
    //Read the element to be searched
-   printf("\nEnter the elements to be searched :");
+   printf("\nEnter the elements to be searched :",ele);
    scanf("%d", &ele);
  
    
