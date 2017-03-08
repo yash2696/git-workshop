@@ -23,7 +23,7 @@ int main()
 		
 		// HERE IS THE BUG, THE BELOW LINE SHOULD BE UNCOMMENTED FOR THIS PROGRAM TO WORK PROPERLY
 		
-        // n /= 10;
+         n /= 10;
     }
 
     if (originalInteger == reversedInteger)

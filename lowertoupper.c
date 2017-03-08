@@ -15,7 +15,7 @@ int main(){
   printf("The string is = %s",str);
   for(i=0;i<=strlen(str);i++){
 	// HERE IS THE BUG, THE RANGE OF SMALL CASE LETTERS IS 97 TO 122.
-	if(str[i]>=98&&str[i]<=121)
+	if(str[i]>=97&&str[i]<=121)
 		str[i]=str[i]-32;
   }
   printf("\nThe string in lowercase is = %s",str);

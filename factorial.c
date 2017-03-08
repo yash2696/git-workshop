@@ -21,7 +21,7 @@ int main()
     else
     {
 		// HERE IS THE BUG, CHANGE i<n to i<=n
-        for(i=1; i<n; ++i)
+        for(i=1; i<=n; ++i)
         {
             factorial *= i;
         }
