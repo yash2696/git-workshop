@@ -24,7 +24,7 @@ int main()
     }
 
 	// HERE IS THE BUG, average is declared as int, that will give wrong output. CHANGE int average TO float average.
-	int average;
+	float average;
     average = sum / n;
     printf("Average = %.2f", average);
 
